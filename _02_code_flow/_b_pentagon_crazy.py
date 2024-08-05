@@ -18,22 +18,30 @@ if __name__ == '__main__':
     window.bgcolor('black')
     window.setup(width=0.75, height=0.9, startx=0, starty=0)
     
-    colors = ('red', 'blue', 'green', 'yellow', 'orange')
+    colors = ('orange', 'green', 'cyan', 'blue', 'purple')
     
     # Make a new turtle
-    
+    bob = turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    bob.shape('turtle')
     # Set the turtle speed to max (0)
-    
+    bob.speed(0)
     # Set the turtle width to 1
-    
+    bob.width(1)
     # Create a variable to hold the number of sides in a pentagon
-    
+    pentagon = 5
     # Create a variable to be the angle of 360 divided by the sides variable
-    
+    angle = 360/pentagon
     # Use a for loop to repeat ALL the following lines of code 360 times. 
-        
+    for i in range(360):
+        if i == 100:
+            bob.width(2)
+        if i == 200:
+            bob.width(3)
+        bob.pencolor(get_next_color(i))
+        bob.forward(i)
+        bob.right(angle+1)
+        bob.hideturtle()
         # If the loop variable (i) is equal to 100, set the turtle width to 2
         
         # If the loop variable (i) is equal to 200, set the turtle width to 3
