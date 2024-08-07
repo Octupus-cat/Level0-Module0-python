@@ -45,7 +45,7 @@ def key_pressed():
 
     # 10. Increment the x and y variables of the 2 eye variables by 5:
     #     left_eye.x += 5
-    
+
     # 11. Call the .draw() method for both eye variables.
 
 
@@ -61,12 +61,13 @@ if __name__ == '__main__':
     
     # 2. Call the set_background() function with your variable inside of the parenthesis
     #    for example, set_background(bg_image)
-
+    set_background(bigEyedCat2.gif)
     # 3. Make a new turtle
-
+    bob = turtle.Turtle()
     # 4. Set the turtle color and pen color to red (or any color you want)
     #    using .color('red', 'red')
-
+    bob.color('red')
+    bob.pencolor('red')
     # 5. Set the turtle width to 0 so no outlines are drawn
 
     # 6. Set the turtle speed to 0 (fastest)
